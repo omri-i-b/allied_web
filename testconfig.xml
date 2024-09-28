@@ -1,61 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
-    <!-- To customize the asp.net core module uncomment and edit the following section. 
+<!-- To customize the asp.net core module uncomment and edit the following section. 
   For more info see https://go.microsoft.com/fwlink/?linkid=838655 -->
-    <system.webServer>
-        <modules runAllManagedModulesForAllRequests="true">
-            <remove name="WebDAVModule" />
-            <!-- add this -->
-        </modules>
-        <handlers>
-            <remove name="WebDAV" />
-            <remove name="aspNetCore" />
-            <add name="aspNetCore" path="*" verb="*" modules="AspNetCoreModuleV2" resourceType="Unspecified" />
-        </handlers>
-        <aspNetCore processPath="dotnet" arguments=".\Ecommerce.API.dll" stdoutLogEnabled="false" stdoutLogFile=".\logs\stdout" hostingModel="inprocess">
-            <environmentVariables>
-                <environmentVariable name="ASPNETCORE_ENVIRONMENT" value="QA" />
-            </environmentVariables>
-        </aspNetCore>
-        <cors enabled="true" failUnlistedOrigins="true">
-            <!-- Allow all subdomains of alliedfit.com -->
-            <add origin="https://*.alliedfit.com"
+<system.webServer>
+<modules runAllManagedModulesForAllRequests="true">
+<remove name="WebDAVModule" />
+<!-- add this -->
+</modules>
+<handlers>
+<remove name="WebDAV" />
+<remove name="aspNetCore" />
+<add name="aspNetCore" path="*" verb="*" modules="AspNetCoreModuleV2" resourceType="Unspecified" />
+</handlers>
+<aspNetCore processPath="dotnet" arguments=".\Ecommerce.API.dll" stdoutLogEnabled="false" stdoutLogFile=".\logs\stdout" hostingModel="inprocess">
+<environmentVariables>
+<environmentVariable name="ASPNETCORE_ENVIRONMENT" value="QA" />
+</environmentVariables>
+</aspNetCore>
+<cors enabled="true" failUnlistedOrigins="true">
+<!-- Allow all subdomains of alliedfit.com -->
+<add origin="https://*.alliedfit.com"
                  allowCredentials="true"
                  maxAge="3600">
-                <!-- Allow all headers requested by the client -->
-                <allowHeaders allowAllRequestedHeaders="true" />
-                
-                <!-- Specify allowed methods -->
-                <allowMethods>
-                    <add method="GET" />
-                    <add method="POST" />
-                    <add method="OPTIONS" />
-                    <add method="PUT" />
-                    <add method="DELETE" />
-                </allowMethods>
-                
-                <!-- Expose certain headers to the client -->
-                <exposeHeaders>
-                    <add header="Authorization" />
-                    <add header="Content-Type" />
-                </exposeHeaders>
-            </add>
-        </cors>
-        <httpProtocol>
-            <customHeaders>
-                <add name="Access-Control-Allow-Origin"  
-                     value="http://katiisecomob.alliedfit.com" />
-                <add name="Access-Control-Allow-Methods" 
-                     value="GET, POST, OPTIONS" />
-                <add name="Access-Control-Allow-Headers" 
-                     value="Content-Type, Authorization" />
-                <add name="OPTIONSVerbHandler"
-                     path="*"
-                     verb="OPTIONS"
-                     modules="AspNetCoreModule"
-                     resourceType="Unspecified"/>
-            </customHeaders>
-        </httpProtocol>     
-    </system.webServer>
+<!-- Allow all headers requested by the client -->
+<allowHeaders allowAllRequestedHeaders="true" />
+<!-- Specify allowed methods -->
+<allowMethods>
+<add method="GET" />
+<add method="POST" />
+<add method="OPTIONS" />
+<add method="PUT" />
+<add method="DELETE" />
+</allowMethods>
+<!-- Expose certain headers to the client -->
+<exposeHeaders>
+<add header="Authorization" />
+<add header="Content-Type" />
+</exposeHeaders>
+</add>
+</cors>
+<httpProtocol>
+<customHeaders>
+    <add name="Access-Control-Allow-Methods" value="GET, POST, OPTIONS, PUT, DELETE" />
+    <add name="Access-Control-Allow-Headers" value="Content-Type, Authorization" />
+</httpProtocol>		
+</system.webServer>
 </configuration>
 <!--ProjectGuid: 1FD36A65-DD15-49E8-B44B-46DDD770C760-->
