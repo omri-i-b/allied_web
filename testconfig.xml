@@ -10,6 +10,7 @@
 <handlers>
 <remove name="WebDAV" />
 <remove name="aspNetCore" />
+<remove name="OPTIONSVerbHandler" />
 <add name="aspNetCore" path="*" verb="*" modules="AspNetCoreModuleV2" resourceType="Unspecified" />
 <add name="OPTIONSVerbHandler" path="*" verb="OPTIONS" modules="AspNetCoreModulev2" resourceType="Unspecified" />
 </handlers>
