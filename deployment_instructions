@@ -1,0 +1,18 @@
+# React App Deployment on IIS
+
+1. Make sure Windows Feature for Static Content is enabled.
+    1. Windows Features > IIS > Application Development Features > Static Content
+2. Save the contents of the build folder in a folder on the server. This will contain all the static files for the app.
+    1. Right click on this folder and edit permissions in Security tab.
+        1. Make sure that the following have Read access:
+            1. Everyone
+3. Create a new site.
+    1. Point the Physical Path to the location from Step 2.
+    2. Set IP address and port as required.
+4. Configure MIME Types in Site settings.
+    1. Make sure the following MIME types are configured:
+        - `.js` -> `application/javascript`
+        - `.css` -> `text/css`
+        - `.json` -> `application/json`
+5. Restart IIS.
+6. Start the site.
