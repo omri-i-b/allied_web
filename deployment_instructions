@@ -15,6 +15,6 @@
         - `.css` -> `text/css`
         - `.json` -> `application/json`
 5. Install the URL Rewrite Module.
-    1. Create the same 'SPA Rewrite' rule from the katiisecomob instance.
+    1. Create the same 'SPA Rewrite' rule from the katiisecomob instance. (added through web.config file in /builds folder)
 6. Restart IIS.
 7. Start the site.
