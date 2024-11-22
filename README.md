@@ -1,3 +1,19 @@
+### Build 15
+- **Use Fastly for Image Paths**: Updated all image URLs to use new Fastly path.
+- **Include PO Line Numbers**: Updated UI copy to display "Include PO Line #s" in relevant sections.
+- **Show Line Items on Confirmation Screen**: Added detailed line item data to the checkout confirmation screen.
+- **Enhance Cart Shipping UX**: Improved cart design by repositioning elements, updating text, and refining layout for clarity.
+- **Update Cart Messaging for Missing Inputs**: Added specific error messages for missing shipping terms or PO Line #s during checkout.
+- **Consolidate Banner Adjustments**: Updated banner design to move buttons and adjust font size.
+- **Fix Cart Consolidation Logic**: Resolved issue where items from multiple warehouses were not consolidating correctly due to API response latencies.
+- **Limit Weight Precision in Cart**: Restricted weight values to one decimal point in the cart.
+- **Fix Saved Cart Image Paths**: Corrected saved cart image URLs pointing to placeholder locations.
+- **Revert Homepage Design**: Restored the homepage to its original layout.
+- **Add Technical Information Link**: Added a new footer link to "Technical Information".
+- **Sort Size Filter Numerically**: Updated size filter logic to sort values numerically instead of alphabetically.
+- **Auto-Populate Freight Account Numbers**: Implemented logic to auto-fill freight account numbers based on carrier and customer IDs.
+
+
 ### Build 14
 - updates to PO Line #
 - update to PO number input on checkout
@@ -5,7 +21,6 @@
 
 
 ### Build 13
-
 - New features
     - **Bulk Shipping Selection**: Update shipping options to allow bulk or individual package assignment.
     - **Pre-populate Manufacturing Type**: Default manufacturing type based on the first item in the cart.
