@@ -1,17 +1,31 @@
+### Build 16
+- Prevent creating source map files to avoid endpoints in source code.
+- Improved handling for shipping terms selection in carts under various scenarios.
+- Add phone number to addresses.
+- Disable order submission if cart is inactive and show error message.
+- Change copy to “PO Line # is required.”
+- Update sold-out UI to recommend contacting Allied.
+- Handle items with no list price to recommend contacting Allied.
+- Require “Attention To / Tag” if UPS carrier is selected and pass on checkout.
+- Bug fix for PO numbers not populating.
+- Prevent users from selecting weekends for custom dates.
+- Reverting back from Fastly endpoints.
+- Additional bug and UI fixes.
+
 ### Build 15
-- **Use Fastly for Image Paths**: Updated all image URLs to use new Fastly path.
-- **Include PO Line Numbers**: Updated UI copy to display "Include PO Line #s" in relevant sections.
-- **Show Line Items on Confirmation Screen**: Added detailed line item data to the checkout confirmation screen.
-- **Enhance Cart Shipping UX**: Improved cart design by repositioning elements, updating text, and refining layout for clarity.
-- **Update Cart Messaging for Missing Inputs**: Added specific error messages for missing shipping terms or PO Line #s during checkout.
-- **Consolidate Banner Adjustments**: Updated banner design to move buttons and adjust font size.
-- **Fix Cart Consolidation Logic**: Resolved issue where items from multiple warehouses were not consolidating correctly due to API response latencies.
-- **Limit Weight Precision in Cart**: Restricted weight values to one decimal point in the cart.
-- **Fix Saved Cart Image Paths**: Corrected saved cart image URLs pointing to placeholder locations.
-- **Revert Homepage Design**: Restored the homepage to its original layout.
-- **Add Technical Information Link**: Added a new footer link to "Technical Information".
-- **Sort Size Filter Numerically**: Updated size filter logic to sort values numerically instead of alphabetically.
-- **Auto-Populate Freight Account Numbers**: Implemented logic to auto-fill freight account numbers based on carrier and customer IDs.
+- Updated all image URLs to use new Fastly path.
+- Updated UI copy to display "Include PO Line #s" in relevant sections.
+- Added detailed line item data to the checkout confirmation screen.
+- Improved cart design by repositioning elements, updating text, and refining layout for clarity.
+- Added specific error messages for missing shipping terms or PO Line #s during checkout.
+- Updated banner design to move buttons and adjust font size.
+- Resolved issue where items from multiple warehouses were not consolidating correctly due to API response latencies.
+- Restricted weight values to one decimal point in the cart.
+- Corrected saved cart image URLs pointing to placeholder locations.
+- Restored the homepage to its original layout.
+- Added a new footer link to "Technical Information".
+- Updated size filter logic to sort values numerically instead of alphabetically.
+- Implemented logic to auto-fill freight account numbers based on carrier and customer IDs.
 
 
 ### Build 14
