@@ -1,4 +1,4 @@
-### Build 16
+### Build 17
 - Prevent creating source map files to avoid endpoints in source code.
 - Improved handling for shipping terms selection in carts under various scenarios.
 - Add phone number to addresses.
@@ -11,6 +11,9 @@
 - Prevent users from selecting weekends for custom dates.
 - Reverting back from Fastly endpoints.
 - Additional bug and UI fixes.
+
+### Build 16
+* No release *
 
 ### Build 15
 - Updated all image URLs to use new Fastly path.
