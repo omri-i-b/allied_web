@@ -1,3 +1,24 @@
+### RC1
+- Updates to saved carts (hyperlinks, images, updated recall messaging)
+- Various cart editing fixes
+- Various cart update fixes
+- Added attention tag for all non-will call packages
+- Corrected subtotal calculations in confirmed orders
+- Resolved issues when adding high-quantity items
+- Set cookie expiration and graceful handling expired tokens
+- Changed “Search for part” to “Search by description”
+- Updated hero copy; re-added category/subcategory search options
+- Fixed UI/UX states when changing quantities and switching manufacturers
+- Reference number passes from top line item
+- Reintroduced a red warning message for zero list price
+- Limited search results display to categories
+- Fixed issues adding over-available-quantity items to cart
+- Ensured “Add to Cart” updates correctly when navigating via footer links
+- Unify “attention” tag on all applicable shipments
+- Show correct messages for unavailable “Approved” products
+- Fixed address resubmission and related UI inconsistencies
+- Additional bug fixes and improvements
+
 ### Build 17
 - Prevent creating source map files to avoid endpoints in source code.
 - Improved handling for shipping terms selection in carts under various scenarios.
