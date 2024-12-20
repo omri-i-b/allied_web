@@ -1,3 +1,9 @@
+### RC2
+- Remove a caching dependence on warehouse availability
+- Clear global cart and associated selection after checkout
+- Changes to attention/tag passing to reference field
+- Additional bug fixes and improvements
+
 ### RC1
 - Updates to saved carts (hyperlinks, images, updated recall messaging)
 - Various cart editing fixes
