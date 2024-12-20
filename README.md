@@ -2,6 +2,7 @@
 - Remove a caching dependence on warehouse availability
 - Clear global cart and associated selection after checkout
 - Changes to attention/tag passing to reference field
+- Catalog fetch performance improvments
 - Additional bug fixes and improvements
 
 ### RC1
