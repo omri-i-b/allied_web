@@ -1,3 +1,8 @@
+### RC3
+- Resetting baskets after successful purchase
+- Additional cacheing and performance improvment
+- Additional bug fixes and improvements
+
 ### RC2
 - Remove a caching dependence on warehouse availability
 - Clear global cart and associated selection after checkout
