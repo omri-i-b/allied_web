@@ -1,3 +1,7 @@
+### RC4
+- Changes to warehouse default logic
+- Additional bug fixes and improvements
+
 ### RC3
 - Resetting baskets after successful purchase
 - Additional cacheing and performance improvment
